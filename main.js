@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, ipcMain } = require('electron')
 const path = require('node:path')
 
 function createWindow() {
@@ -16,6 +16,9 @@ function createWindow() {
 
 // app.whenReady().then(createWindow)
 app.whenReady().then(() => {
+  ipcMain.handle('ping', () => {
+    return 'pong'
+  })
   createWindow()
 
   app.on('activate', () => {
