@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "package": "electron-forge package",
     "make": "electron-forge make",
-    "publish": "electron-forge publish"
+    "publish": "cross-env GITHUB_TOKEN=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 electron-forge publish"
   },
   "keywords": [],
   "author": "yml",
@@ -27,6 +27,9 @@
     "electron-prebuilt-compile": "8.2.0"
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.1"
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7",
+    "electron-squirrel-startup": "^1.0.1",
+    "update-electron-app": "^3.1.0"
   }
 }

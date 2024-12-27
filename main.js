@@ -1,6 +1,8 @@
 const { app, BrowserWindow, ipcMain } = require('electron')
 const path = require('node:path')
 
+require('dotenv').config()npm install cross-env
+
 function createWindow() {
   const win = new BrowserWindow({
     width: 800,
