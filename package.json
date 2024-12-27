@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "package": "electron-forge package",
     "make": "electron-forge make",
-    "publish": "cross-env GITHUB_TOKEN=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 electron-forge publish"
+    "publish": "electron-forge publish"
   },
   "keywords": [],
   "author": "yml",
